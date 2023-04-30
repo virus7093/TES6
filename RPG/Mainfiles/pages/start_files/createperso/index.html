@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <title>The Elder Scrolls VI</title>
+        <link rel="shortcut icon" href="../../../img/logo.png"/>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <div class="shadow"></div>
+        <div class="line"></div>
+        <div class="create">
+            <form method="post" action="../newperso/">
+                <h1>Creer son personnage</h1>   
+                <div class="main">
+                    <label for="Name" class="Name">Nom :</label>
+                    <input type="text" name="Name" required/>
+
+                    <div class="sexe">
+                        <h2>Sexe :</h2>
+                        <label for="Homme">Homme</label>
+                        <input type="radio" name="Sexe" id="Homme" value="Homme" required>
+                        <label for="Femme">Femme</label>
+                        <input type="radio" name="Sexe" id="Femme" value="Femme" required>
+                    </div>
+
+                    <div class="race">
+                        <h2>Race :</h2>
+                        <label for="Humain">Humain</label>
+                        <input type="radio" name="Race" id="Humain" value="Humain" required>
+                        <label for="Elfe">Elfe</label>
+                        <input type="radio" name="Race" id="Elfe" value="Elfe" required>
+                    </div>
+
+                    <div class="Class">
+                        <h2>Classe :</h2>
+                        <label for="Barbare">Barbare</label>
+                        <input type="radio" name="Class" id="Barbare" value="Barbare" required>
+                        <label for="Mage">Mage</label>
+                        <input type="radio" name="Class" id="Mage" value="Mage" required>
+                        <label for="Archer">Archer</label>
+                        <input type="radio" name="Class" id="Archer" value="Archer" required>
+                    </div>
+                </div>
+
+                <input type="submit" value="Créer" onclick="quitpage()"/>
+
+            </form>
+
+
+        </div>
+        <div class="save">
+            <form method="post" action="../usesave/">
+                <h1>Reprendre une aventure</h1>
+
+
+
+                <div>
+                    <label for="savecook">Avec un code de sauvegarde</label>
+                    <input type="text" name="savecook" required onclick="quitpage()"/>
+                </div>
+               
+
+                <input type="submit" value="Valider"/>
+            </form>
+            
+        </div>
+    </body>
+
+    <script type="text/javascript" src="../../../js/createperso.js"></script>
+</html>
