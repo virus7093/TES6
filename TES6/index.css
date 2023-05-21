@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Caroligian;
+    src: url("./Mainfiles/police/carolingia.ttf") format("truetype");
+}
+
+body {
+    background: black;
+}
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#text {
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    left: 50%;
+    width: 852px;
+    transform: translateX(-426px);
+    height: 270px;
+}
+
+h1, h2, h3 {
+    font-family: Caroligian;
+    font-size: 60px;
+    color: white;
+}
+
+h1, h2 {
+    text-shadow: 2px 2px 2px white;
+}
+
+h3 {
+    position: relative;
+    top: 90%;
+    text-shadow: 2px 2px 2px black;
+}
+
